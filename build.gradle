@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation group: 'org.controlsfx', name: 'controlsfx', version: '11.1.1'
+
+    runtimeOnly group: 'com.oracle.database.jdbc', name: 'ojdbc11', version: '21.5.0.0'
+    runtimeOnly 'org.xerial:sqlite-jdbc:3.14.2'
+}
+
+javafx {
+    version = '11'
+    modules = ['javafx.controls']
+}
+
+application {
+    mainClassName = 'chocolate.factory.Main'
+    applicationName = 'Chocolate Factory'
+}
