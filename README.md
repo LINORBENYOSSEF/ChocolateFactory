@@ -1,5 +1,5 @@
 # ChocolateFactory
-ChocolateFactory- Oracle 
+ChocolateFactory- Oracle DB
 
 Management of a chocolate factory:
 working hours of the employees, amount of ingredients & clients orders.
@@ -34,3 +34,12 @@ Inventory of ingredients
 Clients
 ![image](https://user-images.githubusercontent.com/49592750/192897166-d619e415-e923-4fc3-85e8-091f1ee95782.png)
 
+# How to use?
+  Connect SQLDEVELOPER user and run the file "db-config.sql"
+ 
+ - IDE run in terminal:
+    ```
+     gradlew.bat clean build 
+     gradlew.bat run      
+    ```
+ 
